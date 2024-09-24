@@ -1,0 +1,61 @@
+.salon{
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-color: #191C27;
+    @media (max-width: 425px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__container{
+        &-1{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-top: 1px solid white;
+            &:hover{
+                color: #B21414;
+                border-top: 1px solid #B21414;
+                border-bottom: 1px solid #B21414;
+            }
+            &-right{
+                display: flex;
+                
+            }
+        }
+        &-title{
+        cursor: pointer;
+        }
+        &-4{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            &:hover{
+                color: #B21414;
+                border-top: 1px solid #B21414;
+                border-bottom: 1px solid #B21414;
+            }
+        }
+        
+    }
+    &-knopka{
+        margin-top: 100px;
+    }
+    &-img{
+        position: absolute;
+        left: 800px;
+        top: 5980px;
+        @media (max-width: 1024px){
+            display: none;
+        }
+    }
+}

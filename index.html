@@ -1,11 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Подключение boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/normalize.min.css">
+    <link rel="stylesheet" href="/assets/style/main-style.min.css">
 </head>
-<body>
-    
+<body class="application">
+    <div class="application__template">
+        <header class="application__header header" id="header">
+            <div class="navbar">
+                <div class="navbar__left">
+                    <div class="navbar__img">
+                        <img src="./assets/img/Frame.svg" alt="Fouro" class="navbar-icon">
+                    </div>
+                     <div class="navbar__left-en">
+                        <li class="navbar__linkEN"><a href="#!" class="navbar__titleEN">IT</a></li>
+                        <li class="navbar__linkEN"><a href="#!" class="navbar__titleEN">EN</a></li>
+                     </div>
+                </div>
+                <div class="navbar__center">
+                    <li class="navbar__link"><a href="#!" class="navbar__title">Услуги</a></li>
+                    <li class="navbar__link"><a href="#!" class="navbar__title">Кейсы</a></li>
+                    <li class="navbar__link"><a href="#!" class="navbar__title">О нас</a></li>
+                    <li class="navbar__link"><a href="#!" class="navbar__title">Отзывы</a></li>
+                    <li class="navbar__link"><a href="#!" class="navbar__title">Контакты</a></li>
+                </div>
+                <div class="navbar__right">
+                    <div class="navbar__rightTel"><h2 class="navbar__rightTell">+7 (499) 375-41-14</h2></div>
+                    <div class="navbar__right-icon">
+                        <img src="./assets/img/Group 1829.svg" alt="Telephone" class="navbar__right-icon-img">
+                        <button class="fouro__container-but-knopka button" id="openModal">меню</button>
+                        <div class="modal" id="myModal">
+                            <div class="modal-content">
+                                <span class="close" id="closeModal">&times;</span>
+                                <ul class="services">
+                                    <li class="navbar__link"><a href="#!" class="navbar__title">Услуги</a></li>
+                                    <li class="navbar__link"><a href="#!" class="navbar__title">Кейсы</a></li>
+                                    <li class="navbar__link"><a href="#!" class="navbar__title">О нас</a></li>
+                                    <li class="navbar__link"><a href="#!" class="navbar__title">Отзывы</a></li>
+                                    <li class="navbar__link"><a href="#!" class="navbar__title">Контакты</a></li>
+                                    <h2>+7 (499) 375-41-14</h2>
+                               </ul>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="application__main main" id="main">
+            <div class="main__content" id="main-content">
+              <section class="digital">
+                <img src="./assets/img/bg.svg" class="digital-bg">
+                <img src="./assets/img/scroll.svg" alt="" class="digital-scroll">
+                <div class="digital__container">
+                    <div class="digital__container_info">
+                        <h1>DIGITAL</h1>
+                        <h2 class="digital__container_info-title">MARKETING</h2>
+                        <p class="digital__container_info-txt">Раскроем потенциал вашего бизнеса,<br> благодаря комплексному подходу <br>
+                            в продвижении</p>
+                    </div>
+                    <div class="digital__img">
+                        <img src="./assets/img/red.svg" alt="" class="digital__img-icon">
+                    </div>
+                </div>
+              </section>   
+              <section class="grate">
+                <div class="grate__info">
+                    <p class="grate__info-txt">Занимается продвижением <br>оффлайн-брендов в цифровой <br>среде. Основываясь на анализе <br>аудитории, продукта и конкурентов, <br>предлагаем комплексные услуги <br>для вашего бизнеса: от разработки<br> стратегии продвижения до ее <br>реализации.</p>
+                </div>
+                <div class="grate__container">
+                    <div class="grate__container_info">
+                        <p class="grate__container__txt">#Разработка сайтов</p>
+                        <p class="grate__container__txt">#Digital-стратегия</p>
+                    </div>
+                    <div class="grate__container_info">
+                        <p class="grate__container__txt">#Аналитика</p>
+                        <p class="grate__container__txt">#Аудит</p>
+                        <p class="grate__container__txt">#Анализ конкурентов</p>
+                    </div>
+                    <div class="grate__container_info">
+                        <p class="grate__container__txt">#SMM</p>
+                        <p class="grate__container__txt">#Таргетированная реклама</p>
+                    </div>
+                    <div class="grate__container_info">
+                        <p class="grate__container__txt">#SEO</p>
+                        <p class="grate__container__txt">#Контекстная реклама</p>
+                    </div>
+                </div>
+                <img src="./assets/img/scroll2.svg" alt="" class="digital-scroll">
+              </section>  
+              <section class="fouro">
+                <img src="./assets/img/scroll3.svg" alt="" class="fouro-scroll">
+                <div class="fouro__container">
+                    <div class="fouro__container-zag">
+                        <h2 class="fouro__container-zagWhite">АГЕНСТВО</h2>
+                        <h2 class="fouro__container-zagRed">FOURO</h2>
+                    </div>
+                    <div class="fouro__container-info">
+                        <p class="fouro__container-info-top"> – команда профессионалов-единомышленников <br>в области digital-маркетинга, фанатеющих от своей<br> работы.</p>
+                        <p class="fouro__container-info-button">Философия нашего агентства проста – создавать <br>эффективные проекты по продвижению бизнеса<br> в цифровой среде.</p>
+                    </div>
+                    <div class="fouro__container-but">
+                        <button class="fouro__container-but-knopka">ЗАКАЗАТЬ <b>→</b></button>
+                    </div>
+                </div>
+              </section>   
+              <section class="site">
+                <img src="./assets/img/scroll3.svg" alt="" class="fouro-scroll">
+                <div class="site__container">
+                    <div class="site__container-right">
+                        <h2 class="site__container-right-title">РАЗРАБОТКА САЙТОВ</h2>
+                        <p class="site__container-right-txt">Умеем не просто делать новые сайты, или <br>производить апгрейд текущих – мы делаем <br>инструменты для привлечения клиентов и<br> зарабатывания денег.</p>
+                        <button class="fouro__container-but-knopka">ЗАКАЗАТЬ <b>→</b></button>
+                    </div>
+                    <div class="site__container-left">
+                        <img src="./assets/img/kot.png" alt="" class="site__container-left-img">
+                    </div>
+                </div>
+              </section>
+              <section class="analist">
+                <img src="./assets/img/scroll3.svg" alt="" class="fouro-scroll">
+                <div class="site__container">
+                    <div class="site__container-right">
+                        <h2 class="analist-title site__container-right-title">АНАЛИЗ И АУДИТ</h2>
+                        <p class="site__container-right-txt">Сделаем полный анализ работы <br>сайта - от получения посетителей до<br> нужной конверсии. Проверим<br> тепловые карты, микроконверсии и<br> настроим нужные цели для систем<br> аналитики яндекса, гугла и <br>call-tracking.</p>
+                        <button class="fouro__container-but-knopka">ЗАКАЗАТЬ <b>→</b></button>
+                    </div>
+                    <div class="site__container-left">
+                        <img src="./assets/img/6c1906a186324a052aa65f01436d6340.jpg" alt="" class="site__container-left-img">
+                    </div>
+                </div>
+              </section>   
+              <section class="mark">
+                <img src="./assets/img/scroll3.svg" alt="" class="fouro-scroll">
+                <div class="site__container">
+                    <div class="site__container-right">
+                        <h2 class="mark-title site__container-right-title">РЕКЛАМА <BR>И ПРОДВИЖЕНИЕ</h2>
+                        <p class="site__container-right-txt">Ваш бизнес может получать<br> рекламный трафик не только из<br> контекста и из социальных сетей. В<br> зависимости от сферы <br>деятельности, эффективность такой<br> рекламы может быить даже выше <br>традиционных платных каналов</p>
+                        <button class="fouro__container-but-knopka">ЗАКАЗАТЬ <b>→</b></button>
+                    </div>
+                    <div class="site__container-left">
+                        <img src="./assets/img/754533026_preview_cat1.jpg" alt="" class="site__container-left-img">
+                    </div>
+                </div>
+              </section>
+              <section class="salon">
+                <img src="./assets/img/scroll3.svg" alt="" class="fouro-scroll">
+                <img src="./assets/img/об.png" class="salon-img" alt="кухня">
+                <div class="salon__container">
+                    <div class="salon__container-1">
+                        <div class="salon__container-1-left">
+                            <h2 class="salon__container-title">САЛОН НЕМЕЦКИХ КУХОНЬ</h2>
+                            <p class="salon__container-txt">ROI - 1500% за 1,5 года</p>
+                        </div>
+                        <div class="salon__container-1-right">
+                            <p class="salon__container-title">РАЗРАБОТКА САЙТА</p>
+                            <img src="./assets/img/Group 1474 (1).svg" alt="" class="salon__container-img">
+                        </div>
+                    </div>
+                    <div class="salon__container-1">
+                        <div class="salon__container-1-left">
+                            <h2 class="salon__container-title">РИЕЛТОР ИГОРЬ ПУШТАЕВ</h2>
+                            <p class="salon__container-txt">Смотреть результат</p>
+                        </div>
+                        <div class="salon__container-1-right">
+                            <p class="salon__container-title">РАЗРАБОТКА САЙТА</p>
+                            <img src="./assets/img/Group 1474 (1).svg" alt="" class="salon__container-img">
+                        </div>
+                    </div>
+                    <div class="salon__container-1">
+                        <div class="salon__container-1-left">
+                            <h2 class="salon__container-title">LATTERIA ИТАЛЬЯНСКАЯ СЫРОВАРНЯ</h2>
+                            <p class="salon__container-txt">с 1,5 % до 4,5 % увеличена конверсия и<br> кликабельность</p>
+                        </div>
+                        <div class="salon__container-1-right">
+                            <p class="salon__container-title">РАЗРАБОТКА САЙТА</p>
+                            <img src="./assets/img/Group 1474 (1).svg" alt="" class="salon__container-img">
+                        </div>
+                    </div>
+                    <div class="salon__container-4">
+                        <div class="salon__container-1-left">
+                            <h2 class="salon__container-title">ПАТЕНТНОЕ БЮРО</h2>
+                            <p class="salon__container-txt">Обновлен дизайник <br>
+                                Повышена скорость работы сайта<br>
+                                Улучшино юзабилити</p>
+                        </div>
+                        <div class="salon__container-1-right">
+                            <p class="salon__container-title">РАЗРАБОТКА САЙТА</p>
+                            <img src="./assets/img/Group 1474 (1).svg" alt="" class="salon__container-img">
+                        </div>
+                    </div>
+                    <div class="salon-knopka">
+                    <button class="salon-knpoka fouro__container-but-knopka">ВСЕ КЕЙСЫ<b>→</b></button>
+                </div>
+                </div>
+              </section>
+              <section class="klient">
+                <img src="./assets/img/scroll3.svg" alt="" class="fouro-scroll">
+                <h2 class="klient-title">КЛИЕНТЫ</h2>
+                <div class="klient__container">
+                    <div class="klient__container-logo">
+                        <img src="./assets/img/klient/2.png" alt="Клиент" class="klient__container-logo-img">
+                        <img src="./assets/img/klient/3.png" alt="Клиент" class="klient__container-logo-img">
+                        <img src="./assets/img/klient/4.png" alt="Клиент" class="klient__container-logo-img">
+                    </div>
+                    <div class="klient__container-logo">
+                        <img src="./assets/img/klient/6.png" alt="Клиент" class="klient__container-logo-img">
+                        <img src="./assets/img/klient/5.png" alt="Клиент" class="klient__container-logo-img">
+                        <img src="./assets/img/klient/7.png" alt="Клиент" class="klient__container-logo-img">
+                    </div>
+                    <div class="klient__container-logo">
+                        <img src="./assets/img/klient/9.png" alt="Клиент" class="klient__container-logo-img">
+                        <img src="./assets/img/klient/1.png" alt="Клиент" class="klient__container-logo-img">
+                        <img src="./assets/img/klient/8.png" alt="Клиент" class="klient__container-logo-img">
+                    </div>
+                </div>
+              </section>
+              <section class="com">
+                <h2 class="com-title">ОТЗЫВЫ</h2>
+                <div class="com__container">
+                    <div class="com__container-gard-info">
+                    <div class="com__container-gard">
+                        <h2 class="com__container-gard-title">Название компании</h2>
+                        <p class="com__container-gard-txt">Очень крутая компания! <br>
+                            Спасибо большое ребятам за такой сервис и высшую <br>культуру обслуживания клиентов! Так держать! Всем <br>советуем) </p>
+                        </div>
+                        <div class="com__container-info">
+                        <p class="com__container-gard-txt">Руководитель компании, Крутой Петр</p>
+                    </div>
+                    </div>
+                    <div class="com__container-gard-info">
+                        <div class="com__container-gard">
+                            <h2 class="com__container-gard-title">Название компании</h2>
+                            <p class="com__container-gard-txt">Очень крутая компания! <br>
+                                Спасибо большое ребятам за такой сервис и высшую <br>культуру обслуживания клиентов! Так держать! Всем <br>советуем) </p>
+                            </div>
+                            <div class="com__container-info">
+                            <p class="com__container-gard-txt">Руководитель компании, Крутой Петр</p>
+                        </div>
+                        </div>
+                        <div class="com__container-gard-info">
+                            <div class="com__container-gard">
+                                <h2 class="com__container-gard-title">Название компании</h2>
+                                <p class="com__container-gard-txt">Очень крутая компания! <br>
+                                    Спасибо большое ребятам за такой сервис и высшую <br>культуру обслуживания клиентов! Так держать! Всем <br>советуем) </p>
+                                </div>
+                                <div class="com__container-info">
+                                <p class="com__container-gard-txt">Руководитель компании, Крутой Петр</p>
+                                 </div>
+                            </div>
+                        </div>
+                    <div class="com__video">
+                        <div class="com__video-gard">
+                            <img src="./assets/img/icon.svg" alt="ikon" class="com__video-icon">
+                        </div>
+                        <div class="com__video-gard">
+                            <img src="./assets/img/icon2.svg" alt="ikon" class="com__video-icon">
+                        </div>
+                        <div class="com__video-gard">
+                            <img src="./assets/img/icon3.svg" alt="ikon" class="com__video-icon">
+                        </div>
+                    </div>
+                    <div class="com-button">
+                        <button class="fouro__container-but-knopka">ВСЕ ОТЗЫВЫ</button>
+                    </div>
+              </section>
+              <section class="feedback">
+                <img src="./assets/img/scroll3.svg" alt="scroll" class="feedback-scroll fouro-scroll">
+                <h2 class="feedback-title">ДАВАЙТЕ ОБСУДИМ <br>ВАШ ПРОЕКТ</h2>
+                    <div class="feedback__container">
+                       <div class="feedback__container-reg">
+                            <img src="./assets/img/User.svg" alt="logo" class="feedback__container-logo">
+                            <input type="text" class="feedback__container-reg-name" placeholder="Имя">
+                       </div>
+                       <div class="feedback__container-reg">
+                        <img src="./assets/img/tell.svg" alt="logo" class="feedback__container-logo">
+                        <input type="text" class="feedback__container-reg-name" placeholder="Телефон">
+                   </div>
+                    </div>
+                    <div class="feedback__container-com">
+                        <img src="./assets/img/Message - 4.svg" alt="logo" class="feedback__container-logo">
+                        <input type="text" class="feedback__container-com-name feedback__container-reg-name" placeholder="Комментарий">
+                    </div>
+                    <p>Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
+                    <div class="feedback__button">
+                        <button class="fouro__container-but-knopka">Отправить</button>
+                    </div>
+                    <img src="./assets/img/кастер.png" alt="kaster" class="feedback__bg">
+              </section>
+            </div>
+        </main>
+        <footer class="application__footer footer">
+            <div class="footer__container">
+                <div class="footer__container-name">
+                    <img src="./assets/img/Frame.svg" alt="" class="footer__container-name-logo">
+                    <p class="footer__container-name-txt">Политика конфиденциальности</p>
+                    <p class="footer__container-name-txt">© 2021, Fouro</p>
+                </div>
+                <div class="footer__container-ser">
+                    <h2 class="footer__container-ser-title">УСЛУГИ</h2>
+                    <p class="footer__container-name-txt">Создание сайтов</p>
+                    <p class="footer__container-name-txt">Контекстная реклама</p>
+                    <p class="footer__container-name-txt">SEO</p>
+                    <p class="footer__container-name-txt">Digital-стратегия</p>
+                </div>
+                <div class="footer__container-smm">
+                    <p class="footer__container-name-txt">SMM</p>
+                    <p class="footer__container-name-txt">Аналитика</p>
+                    <p class="footer__container-name-txt">Анализ конкурентов</p>
+                    <p class="footer__container-name-txt">Таргетированная реклама</p>
+                    <p class="footer__container-name-txt">Аудит</p>
+                </div>
+                <div class="footer__container-tree">
+                    <h2 class="footer__container-ser-title">КЕЙСЫ</h2>
+                    <h2 class="footer__container-ser-title">О НАС</h2>
+                    <h2 class="footer__container-ser-title">КОНТАКТЫ</h2>
+                </div>
+                <div class="footer__container-two">
+                    <h2 class="footer__container-ser-title">+7 (499) 375-41-14</h2>
+                    <h2 class="footer__container-ser-title">info@fouro.ru</h2>
+                </div>
+        </footer>
+        <script defer src="/assets/javascript/application.js"></script>
+    </div>
 </body>
 </html>

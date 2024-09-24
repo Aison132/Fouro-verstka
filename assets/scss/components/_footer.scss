@@ -1,0 +1,35 @@
+.footer{
+    background-color: #191C27;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+        flex-grow: 1;
+        @media (max-width: 1024px){
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @media (max-width: 425px){
+            flex-direction: column;
+            align-items: center;
+        }
+        &-name{
+            &-logo{
+                margin-bottom: 55px;
+            }
+            &-txt{
+                font-size: 16px;
+            }
+        }
+        &-ser{
+            &-title{
+                font-size: 18px;
+            }
+
+        }
+    }
+}

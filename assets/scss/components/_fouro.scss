@@ -1,0 +1,76 @@
+.fouro{
+    width: 100%;
+    margin-bottom: 200px;
+    @media (max-width: 1024px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__container{
+        margin-left: 200px;
+        @media (max-width: 425px){
+            margin-left: 0;
+        }
+        &-zag{
+            display: flex;
+            &White{
+                margin-right: 10px;
+                font-size: 50px;
+                @media (max-width: 425px){
+                    font-size: 35px;
+                }
+            }
+            &Red{
+                color: #e21919;
+                font-size: 50px;
+                @media (max-width: 425px){
+                    font-size: 35px;
+                }
+            }
+        }
+        &-info{
+            font-size: 30px;
+            &-top{
+                margin-top: 50px;
+            }
+            &-button{
+                margin-top: 50px;
+            }
+        }
+        &-but{
+            margin-top: 60px;
+            &-knopka{
+                font-size: 20px;
+                cursor: pointer;
+                background-color: #B21414;
+                color: white;
+                padding: 20px 40px 20px 40px;
+                font-weight: 400;
+                border-radius: 100px;
+                border: 5px solid rgb(53 34 34 / 78%);
+                transition: transform 0.2s ease, background-color 0.2s ease;
+                &:hover {
+                    transform: scale(1.1); 
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+    &-scroll{
+        position: absolute;
+        left: 100px;
+        @media (max-width: 1024px){
+            left: 50px;
+        }
+        @media (max-width: 425px){
+            display: none;
+        }
+    }
+    &-bg{
+        position: absolute;
+        top: 2500px;
+        z-index: -1;
+    }
+}

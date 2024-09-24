@@ -1,0 +1,15 @@
+// создаем переменные для scss
+$black: #000;
+$white: #E0E1E3;
+$bg:#191C27;
+// создаем переменные для css
+:root{
+    --color-bg:#{$bg};
+    --color-white: #{$white};
+    --color-black: #{$black};
+    --content-width: 1200px;
+    --container-padding: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+    --font-size: 16px;
+    --font-family:"Montserrat", sans-serif;
+}
